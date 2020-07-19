@@ -1,0 +1,239 @@
+	template <typename Real>
+	bool Mesh3D<Real>::load_axl(const char* fins) //进行
+	{
+		FILE *m_pFile = fopen(fins, "r");
+		
+		char *tok;
+		char temp[128];
+		//int v_num = 0;
+
+		try
+		{
+			clear_data();
+			//read vertices
+			fseek(m_pFile, 0, SEEK_SET);
+			char pLine[512];
+
+			fgets(pLine, 512, m_pFile);
+			if (strcmp(strtok(pLine, "<>"), "axl") != 0)
+				return false;
+
+			fgets(pLine, 512, m_pFile);
+			if (strcmp(strtok(pLine, "< "), "polyline") == 0)      //输入多边形polyline类型文件
+			{
+				//VERTEX_LIST s_face;
+				qbound_vert.push_back(1);
+				while (fgets(pLine, 512, m_pFile))
+				{
+					char sLine[512];
+					strcpy(sLine, pLine);
+					tok = strtok(pLine, " <_>");             //strtok函数实现一行文本的分割操作
+
+					if (strcmp(tok, "vertexes") == 0)
+					{
+						//v_num++;
+						for (int k=0; k < 512; k++)
+						{
+							if (sLine[k] == '>')
+							{
+								if (sLine[k+1] != '\n')
+								{
+									tok = strtok(NULL,">");
+									tok = strtok(NULL," ");
+									Vector3<Real> nvv;
+
+									strcpy(temp, tok);
+									temp[strcspn(temp," ")] = 0;
+									nvv[0] = (Real)atof(temp);       //字符串转换成浮点数
+
+									tok = strtok(NULL," "); 
+									strcpy(temp, tok);
+									temp[strcspn(temp," ")] = 0;
+									nvv[1] = (Real)atof(temp);
+
+									nvv[2] = (Real)0.0;
+									insert_vertex(nvv);
+								}
+
+								break;
+							}
+						}
+
+						/*tok = strtok(NULL,">");
+						tok = strtok(NULL," ");
+						if (NULL != tok)
+						{
+							Vector3<Real> nvv;
+						}*/
+					} 
+					else if (strcmp(tok, "/vertexes") == 0)   //一组顶点录入结束
+					{
+						//insert_face(s_face);
+						//s_face.clear();
+						qbound_vert.push_back((int)vertices_list->size());
+					}
+					else if (strcmp(tok, "/polyline") == 0)
+					{
+						break;
+					} 
+					else if (pLine[0] == '\n' || pLine[0] == '\r')
+					{
+						continue;
+					}
+					else{
+						Vector3<Real> nvv;
+
+						strcpy(temp, tok);
+						temp[strcspn(temp," ")] = 0;
+						nvv[0] = (Real)atof(temp);       //字符串转换成浮点数
+
+						tok = strtok(NULL," "); 
+						strcpy(temp, tok);
+						temp[strcspn(temp," ")] = 0;
+						nvv[1] = (Real)atof(temp);
+
+						nvv[2] = (Real)0.0;
+						HE_vert<Real>* hv = insert_vertex(nvv);
+						//s_face.push_back(hv);
+					
+						for (int i=0; i < 512; i++)
+						{
+							if (sLine[i] == '<' && sLine[i+1] == '/')               //一组顶点录入结束
+							{
+								qbound_vert.push_back((int)vertices_list->size());
+							
+								break;
+							}
+							else if (sLine[i] == '\n' || sLine[i] == '\r')
+							{
+								break;
+							}
+						}
+						/*tok = strtok(NULL," <");
+						tok = strtok(NULL, "_");
+						if (strcmp(tok, "/vertexes") == 0)    //一组顶点录入结束
+						{
+							qbound_vert.push_back((int)vertices_list->size());
+						}*/
+					
+					}
+
+				}
+			}
+
+			else if (strcmp(strtok(pLine, "< "), "curve") == 0)          //输入曲线curve类型文件
+			{
+				int first_id = 0;
+				double m_zero = 0.000000001;
+
+				qbound_vert.push_back(0);
+				while (fgets(pLine, 512, m_pFile))
+				{
+					char sLine[512];
+					strcpy(sLine, pLine);  //strtok函数实现一行文本的分割操作
+					tok = strtok(pLine, " <>");  
+
+					if (strcmp(tok, "number") == 0 && get_num_of_vertices_list() == 0)
+					{
+						tok = strtok(NULL, " <");
+						strcpy(temp, tok);
+						temp[strcspn(temp," ")] = 0;
+						qbound_vert.push_back((int)atoi(temp));
+					}
+					else if (strcmp(tok, "order") == 0 && get_num_of_vertices_list() == 0)
+					{
+						tok = strtok(NULL, " <");
+						strcpy(temp, tok);
+						temp[strcspn(temp," ")] = 0;
+						qbound_vert.push_back((int)atoi(temp));
+					} 
+					else if (strcmp(tok, "points") == 0)
+					{
+						int number = 0;
+						for (int k=0; k < 512; k++)
+						{
+							if (sLine[k] == '>')
+							{
+								if (sLine[k+1] != '\n')
+								{
+									number++;
+
+									//tok = strtok(NULL,">");
+									tok = strtok(NULL," ");
+									Vector3<Real> nvv;
+
+									strcpy(temp, tok);
+									temp[strcspn(temp," ")] = 0;
+									nvv[0] = (Real)atof(temp);    //atof(temp) or (atof(temp)/100)
+
+									tok = strtok(NULL," "); 
+									strcpy(temp, tok);
+									temp[strcspn(temp," ")] = 0;
+									nvv[1] = (Real)atof(temp);
+
+									nvv[2] = (Real)0.0;
+									insert_vertex(nvv);
+								}
+
+								break;
+							}
+						}
+
+						for (; number < qbound_vert[1]; number++)    //此处没有判断qbound_vert[1]是否有值
+						{
+							fgets(pLine, 512, m_pFile);
+
+							Vector3<Real> nvv;
+
+							tok = strtok(pLine, " ");
+							strcpy(temp, tok);
+							temp[strcspn(temp," ")] = 0;
+							nvv[0] = (Real)atof(temp);
+
+							tok = strtok(NULL," "); 
+							strcpy(temp, tok);
+							temp[strcspn(temp," ")] = 0;
+							nvv[1] = (Real)atof(temp);
+
+							nvv[2] = (Real)0.0;
+							insert_vertex(nvv);
+
+							if (number == qbound_vert[1] - 1)    //判断是否形成闭环
+							{
+								HE_vert<Real>* fv = get_vertex(first_id);
+
+								if (   abs(nvv[0] - fv->pos[0]) < m_zero
+									&& abs(nvv[1] - fv->pos[1]) < m_zero
+									&& abs(nvv[2] - fv->pos[2]) < m_zero)
+								{
+									qbound_vert.push_back((int)vertices_list->size());
+									first_id = (int)vertices_list->size();
+								}
+							}
+						}
+					}
+					else
+					{
+						continue;
+					}
+				}
+			}
+			//read edges
+
+			//update_mesh();  //没有输入面片结构，不能更新网格
+
+		}
+		catch (...)
+		{
+			clear_data();
+			xmax = ymax = zmax = (Real)1.0;
+			xmin = ymin = zmin = (Real)-1.0;
+
+			fclose(m_pFile);
+			return false;
+		}
+		
+		fclose(m_pFile);
+
+		return isvalid();
+	}

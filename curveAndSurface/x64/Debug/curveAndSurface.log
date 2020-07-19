@@ -1,0 +1,54 @@
+﻿E:\windowsInstall\vs\ide\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(944,5): warning MSB8027: 名为 moc_agent.cpp 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 GeneratedFiles\Debug\moc_agent.cpp, GeneratedFiles\Debug\moc_agent.cpp。
+E:\windowsInstall\vs\ide\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(944,5): warning MSB8027: 名为 moc_bezierCurve.cpp 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 GeneratedFiles\Debug\moc_bezierCurve.cpp, GeneratedFiles\Debug\moc_bezierCurve.cpp。
+E:\windowsInstall\vs\ide\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(944,5): warning MSB8027: 名为 moc_bezierSurface.cpp 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 GeneratedFiles\Debug\moc_bezierSurface.cpp, GeneratedFiles\Debug\moc_bezierSurface.cpp。
+E:\windowsInstall\vs\ide\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(944,5): warning MSB8027: 名为 moc_bsplineCurve.cpp 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 GeneratedFiles\Debug\moc_bsplineCurve.cpp, GeneratedFiles\Debug\moc_bsplineCurve.cpp。
+E:\windowsInstall\vs\ide\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(944,5): warning MSB8027: 名为 moc_bsplineCurve3d.cpp 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 GeneratedFiles\Debug\moc_bsplineCurve3d.cpp, GeneratedFiles\Debug\moc_bsplineCurve3d.cpp。
+E:\windowsInstall\vs\ide\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(944,5): warning MSB8027: 名为 moc_bsplineSurface.cpp 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 GeneratedFiles\Debug\moc_bsplineSurface.cpp, GeneratedFiles\Debug\moc_bsplineSurface.cpp。
+E:\windowsInstall\vs\ide\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(944,5): warning MSB8027: 名为 moc_curveAndSurface.cpp 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 GeneratedFiles\Debug\moc_curveAndSurface.cpp, GeneratedFiles\Debug\moc_curveAndSurface.cpp。
+E:\windowsInstall\vs\ide\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(944,5): warning MSB8027: 名为 moc_nurbsCurve.cpp 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 GeneratedFiles\Debug\moc_nurbsCurve.cpp, GeneratedFiles\Debug\moc_nurbsCurve.cpp。
+E:\windowsInstall\vs\ide\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(944,5): warning MSB8027: 名为 moc_nurbsSurface.cpp 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 GeneratedFiles\Debug\moc_nurbsSurface.cpp, GeneratedFiles\Debug\moc_nurbsSurface.cpp。
+E:\windowsInstall\vs\ide\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(944,5): warning MSB8027: 名为 moc_sweptSurface.cpp 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 GeneratedFiles\Debug\moc_sweptSurface.cpp, GeneratedFiles\Debug\moc_sweptSurface.cpp。
+E:\windowsInstall\vs\ide\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(944,5): warning MSB8027: 名为 moc_sweptVolume.cpp 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 GeneratedFiles\Debug\moc_sweptVolume.cpp, GeneratedFiles\Debug\moc_sweptVolume.cpp。
+  moc_agent.cpp
+  moc_bezierCurve.cpp
+  moc_bezierSurface.cpp
+  moc_bsplineCurve.cpp
+  moc_bsplineCurve3d.cpp
+  moc_bsplineSurface.cpp
+  moc_curveAndSurface.cpp
+  moc_nurbsCurve.cpp
+  moc_nurbsSurface.cpp
+  moc_sweptSurface.cpp
+  moc_sweptVolume.cpp
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziercurve.h(15): warning C4091: “typedef ”: 没有声明变量时忽略“BezierCurveConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_agent.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziercurve.h(15): warning C4091: “typedef ”: 没有声明变量时忽略“BezierCurveConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_bezierCurve.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziercurve.h(15): warning C4091: “typedef ”: 没有声明变量时忽略“BezierCurveConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_curveAndSurface.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziersurface.h(24): warning C4091: “typedef ”: 没有声明变量时忽略“BezierSurfaceConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_curveAndSurface.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziervolume.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“BezierVolumeConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_curveAndSurface.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\bsplinevolume.h(29): warning C4091: “typedef ”: 没有声明变量时忽略“BSplineVolumeConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_curveAndSurface.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziersurface.h(24): warning C4091: “typedef ”: 没有声明变量时忽略“BezierSurfaceConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_agent.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziersurface.h(24): warning C4091: “typedef ”: 没有声明变量时忽略“BezierSurfaceConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_bezierSurface.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziervolume.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“BezierVolumeConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_agent.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\bsplinevolume.h(29): warning C4091: “typedef ”: 没有声明变量时忽略“BSplineVolumeConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_agent.cpp)
+  moc_curveAndSurface.cpp
+  moc_sweptVolume.cpp
+  moc_sweptSurface.cpp
+  moc_bezierSurface.cpp
+  moc_bsplineCurve.cpp
+  moc_bsplineCurve3d.cpp
+  moc_bsplineSurface.cpp
+  moc_agent.cpp
+  moc_bezierCurve.cpp
+  moc_nurbsCurve.cpp
+  moc_nurbsSurface.cpp
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziercurve.h(15): warning C4091: “typedef ”: 没有声明变量时忽略“BezierCurveConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_agent.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziercurve.h(15): warning C4091: “typedef ”: 没有声明变量时忽略“BezierCurveConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_bezierCurve.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziercurve.h(15): warning C4091: “typedef ”: 没有声明变量时忽略“BezierCurveConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_curveAndSurface.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziersurface.h(24): warning C4091: “typedef ”: 没有声明变量时忽略“BezierSurfaceConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_agent.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziervolume.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“BezierVolumeConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_agent.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\bsplinevolume.h(29): warning C4091: “typedef ”: 没有声明变量时忽略“BSplineVolumeConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_agent.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziersurface.h(24): warning C4091: “typedef ”: 没有声明变量时忽略“BezierSurfaceConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_bezierSurface.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziersurface.h(24): warning C4091: “typedef ”: 没有声明变量时忽略“BezierSurfaceConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_curveAndSurface.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\beziervolume.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“BezierVolumeConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_curveAndSurface.cpp)
+c:\users\lee\desktop\code\curve_and_surface\curve_surface\curveandsurface\bsplinevolume.h(29): warning C4091: “typedef ”: 没有声明变量时忽略“BSplineVolumeConfig”的左侧 (编译源文件 GeneratedFiles\Debug\moc_curveAndSurface.cpp)
+  curveAndSurface.vcxproj -> C:\Users\lee\Desktop\code\curve_and_surface\curve_surface\curveAndSurface\x64\Debug\curveAndSurface.exe

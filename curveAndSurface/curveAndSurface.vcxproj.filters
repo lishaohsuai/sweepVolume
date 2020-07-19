@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="BezierCurve">
+      <UniqueIdentifier>{2134623a-7bfe-43ea-b028-bb10e097d557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strategy">
+      <UniqueIdentifier>{57c96da7-7011-4500-807c-e4c8d30384ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Agent">
+      <UniqueIdentifier>{b740e590-5114-43da-971d-3d1bdf2d8ba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{20217666-feaa-4447-b060-94586207954e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DEBUG">
+      <UniqueIdentifier>{4e874232-6ea5-4d4f-a6d1-8e9aa17babcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BezierSurface">
+      <UniqueIdentifier>{7dcdc62f-5a23-46f5-8275-f47e6ef0d5d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bspline">
+      <UniqueIdentifier>{80fe6800-f480-4769-810e-3cb032f95d32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{4367c12a-02a6-46a3-bd41-d4f0008f6b42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sweptSurface">
+      <UniqueIdentifier>{34a23a29-df74-4e7c-bb5f-efac80ebf21e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NURBS">
+      <UniqueIdentifier>{9954be38-07e4-4978-8229-bc1c276fbd70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BezierVolume">
+      <UniqueIdentifier>{b6bdac54-e7f2-4cbd-a086-7712b78b80fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bsplineVolume">
+      <UniqueIdentifier>{db9404f4-082e-4032-8a6a-47385d503825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{c657107f-3ec1-44bb-ab23-b846429e03de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sweptVolume">
+      <UniqueIdentifier>{8e6823d4-4745-4a5b-bba3-adaebb5d3cef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="curveAndSurface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bezierCurve.cpp">
+      <Filter>BezierCurve</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy.cpp">
+      <Filter>Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="agent.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_reader.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_writer.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="bezierSurface.cpp">
+      <Filter>BezierSurface</Filter>
+    </ClCompile>
+    <ClCompile Include="bsplineCurve.cpp">
+      <Filter>bspline</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_agent.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_bezierCurve.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_bezierSurface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_curveAndSurface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_bsplineCurve.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="bsplineCurve3d.cpp">
+      <Filter>bspline</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_bsplineCurve3d.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="bsplineSurface.cpp">
+      <Filter>bspline</Filter>
+    </ClCompile>
+    <ClCompile Include="nurbsCurve.cpp">
+      <Filter>NURBS</Filter>
+    </ClCompile>
+    <ClCompile Include="nurbsSurface.cpp">
+      <Filter>NURBS</Filter>
+    </ClCompile>
+    <ClCompile Include="sweptSurface.cpp">
+      <Filter>sweptSurface</Filter>
+    </ClCompile>
+    <ClCompile Include="bsplineCurveAbstract.cpp">
+      <Filter>bspline</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix33.cpp">
+      <Filter>Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="sweptSurfaceTransform.cpp">
+      <Filter>sweptSurface</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sweptSurfaceTransform.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sweptSurface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sweptVolume.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nurbsCurve.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nurbsSurface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_bsplineSurface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="sweptSurfaceAbstractPlanar.cpp">
+      <Filter>sweptSurface</Filter>
+    </ClCompile>
+    <ClCompile Include="sweptSurfaceAbstractFrentFrame.cpp">
+      <Filter>sweptSurface</Filter>
+    </ClCompile>
+    <ClCompile Include="sweptSurfaceTransformFrentFrame.cpp">
+      <Filter>sweptSurface</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sweptSurfaceTransformFrentFrame.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="sweptSurfaceTransformFrentFrameScale.cpp">
+      <Filter>sweptSurface</Filter>
+    </ClCompile>
+    <ClCompile Include="BezierVolume.cpp">
+      <Filter>BezierVolume</Filter>
+    </ClCompile>
+    <ClCompile Include="bsplineSurfaceAbstract.cpp">
+      <Filter>bspline</Filter>
+    </ClCompile>
+    <ClCompile Include="bsplineVolume.cpp">
+      <Filter>bsplineVolume</Filter>
+    </ClCompile>
+    <ClCompile Include="tool.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="sweptVolumeTransformFrentFrameScale.cpp">
+      <Filter>sweptVolume</Filter>
+    </ClCompile>
+    <ClCompile Include="sweptVolumeAbstractFrentFrame.cpp">
+      <Filter>sweptVolume</Filter>
+    </ClCompile>
+    <ClCompile Include="sweptVolume.cpp">
+      <Filter>sweptVolume</Filter>
+    </ClCompile>
+    <ClCompile Include="sweptVolumeAbstractSilt.cpp">
+      <Filter>sweptVolume</Filter>
+    </ClCompile>
+    <ClCompile Include="sweptVolumeTransformSilt.cpp">
+      <Filter>sweptVolume</Filter>
+    </ClCompile>
+    <ClCompile Include="sweptSurfaceSilt.cpp">
+      <Filter>sweptSurface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="curveAndSurface.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="curveAndSurface.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="json\allocator.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\assertions.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\autolink.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\config.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\features.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\forwards.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json_tool.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\reader.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\value.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\version.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\writer.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>DEBUG</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="bsplineCurveAbstract.h">
+      <Filter>bspline</Filter>
+    </ClInclude>
+    <ClInclude Include="vector3d.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix33.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="sweptSurfaceAbstractPlanar.h">
+      <Filter>sweptSurface</Filter>
+    </ClInclude>
+    <ClInclude Include="sweptSurfaceAbstractFrentFrame.h">
+      <Filter>sweptSurface</Filter>
+    </ClInclude>
+    <ClInclude Include="bsplineSurfaceAbstract.h">
+      <Filter>bspline</Filter>
+    </ClInclude>
+    <ClInclude Include="sweptVolumeAbstractFrentFrame.h">
+      <Filter>sweptVolume</Filter>
+    </ClInclude>
+    <ClInclude Include="sweptVolumeAbstractSilt.h">
+      <Filter>sweptVolume</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="curveAndSurface.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="agent.h">
+      <Filter>Agent</Filter>
+    </QtMoc>
+    <QtMoc Include="bezierCurve.h">
+      <Filter>BezierCurve</Filter>
+    </QtMoc>
+    <QtMoc Include="bezierSurface.h">
+      <Filter>BezierSurface</Filter>
+    </QtMoc>
+    <QtMoc Include="bsplineCurve.h">
+      <Filter>bspline</Filter>
+    </QtMoc>
+    <QtMoc Include="bsplineCurve3d.h">
+      <Filter>bspline</Filter>
+    </QtMoc>
+    <QtMoc Include="bsplineSurface.h">
+      <Filter>bspline</Filter>
+    </QtMoc>
+    <QtMoc Include="nurbsCurve.h">
+      <Filter>NURBS</Filter>
+    </QtMoc>
+    <QtMoc Include="nurbsSurface.h">
+      <Filter>NURBS</Filter>
+    </QtMoc>
+    <QtMoc Include="sweptSurface.h">
+      <Filter>sweptSurface</Filter>
+    </QtMoc>
+    <QtMoc Include="sweptSurfaceTransformFrentFrameScale.h">
+      <Filter>sweptSurface</Filter>
+    </QtMoc>
+    <QtMoc Include="BezierVolume.h">
+      <Filter>BezierVolume</Filter>
+    </QtMoc>
+    <QtMoc Include="bsplineVolume.h">
+      <Filter>bsplineVolume</Filter>
+    </QtMoc>
+    <QtMoc Include="tool.h">
+      <Filter>Tools</Filter>
+    </QtMoc>
+    <QtMoc Include="sweptVolumeTransformFrentFrameScale.h">
+      <Filter>sweptVolume</Filter>
+    </QtMoc>
+    <QtMoc Include="sweptVolume.h">
+      <Filter>sweptVolume</Filter>
+    </QtMoc>
+    <QtMoc Include="sweptVolumeTransformSilt.h">
+      <Filter>sweptVolume</Filter>
+    </QtMoc>
+    <QtMoc Include="sweptSurfaceSilt.h">
+      <Filter>sweptSurface</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="json\json_valueiterator.inl">
+      <Filter>json</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="sweptSurfaceTransform.h">
+      <Filter>sweptSurface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sweptSurfaceTransformFrentFrame.h">
+      <Filter>sweptSurface</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

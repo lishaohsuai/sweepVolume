@@ -1,0 +1,30 @@
+{
+	"name":"SweptVolume",
+
+	"surfaceCtrlPoints":[
+		[ [ -5, 0, 0 ], [ -2, 2, 0 ], [ 2, 2, 0 ], [ 5, 0, 0 ] ],
+		[ [ -5, 3, 0 ], [ -2, 3, 0 ], [ 2, 3, 0 ], [ 5, 3, 0 ] ],
+		[ [ -5, 6, 0 ], [ -2, 6, 0 ], [ 2, 6, 0 ], [ 5, 6, 0 ] ],
+		[ [ -5, 9, 0 ], [ -2, 7, 0 ], [ 2, 7, 0 ], [ 5, 9, 0 ] ]
+	],
+	"surfaceWeight":[
+		[ 1, 1, 1, 1 ],
+		[ 1, 1, 1, 1 ],
+		[ 1, 1, 1, 1 ],
+		[ 1, 1, 1, 1 ]
+	],
+	"SP_Power":2,
+	"SU_vector":[0,0,0,0.5,1,1,1],
+	"SQ_Power":3,
+	"SV_vector":[0,0,0,0,1,1,1,1],
+	"surfacePointsNumberRow":50,
+	"surfacePointsNumberCol":50,
+
+	"curveCtrlPoints":[
+		[-5, 0, -4],[-3, 4, 0],[0, 5, 3],[3, 4, -2],[5, 0, 5]
+	],
+	"CU_vector":[0,0,0,0,0.5,1,1,1,1],
+	"CP_Power":3,
+	"curvaturePointsNumber":20,
+	"curveWeight":[1,1,1,1,1]
+}

@@ -1,0 +1,18 @@
+{
+	"name":"SweptSurface",
+	"ctrlPoint1":[
+		[-5, 0, -4],[-3, 4, 0],[0, 5, 3],[3, 4, -2],[5, 0, 5]
+	],
+	"ctrlPoint2":[
+		[0, -1, 0],[0, 4, 0],[0, 4, 5],[0, -1, 5],[0, -1, 0]
+	],
+	"U_vector":[0,0,0,0,0.5,1,1,1,1],
+	"V_vector":[0,0,0,0,0.5,1,1,1,1],
+	"P_Power":3,
+	"Q_Power":3,
+	"curvePointNum1":50,
+	"curvePointNum2":50,
+	"surfacePointsNum":2000,
+	"weight1":[1,4,1,1,1],
+	"weight2":[1,1,4,1,1]
+}
